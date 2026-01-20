@@ -1,0 +1,30 @@
+{
+  "name": "add-rust-skill",
+  "version": "1.0.0",
+  "description": "A one-click installer for the rust-skills collection for OpenCode and Claude Code.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "add-rust-skill": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyc567/rust-skills.git"
+  },
+  "keywords": [
+    "rust",
+    "skills",
+    "opencode",
+    "claude",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "fs-extra": "^11.2.0"
+  }
+}

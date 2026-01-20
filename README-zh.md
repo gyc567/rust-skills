@@ -45,6 +45,48 @@ AI (使用 Rust Skills):
 
 ## 安装
 
+### NPX 安装 (推荐)
+
+最简单的全局安装方式是使用 `npx`：
+
+```bash
+# 适用于 OpenCode 环境
+npx add-rust-skill opencode
+
+# 适用于 Claude Code 环境
+npx add-rust-skill claude
+```
+该命令会自动将技能复制到对应的用户配置目录中。
+
+---
+
+### 手动安装
+
+如果您希望手动管理安装过程，可以使用一键安装脚本。
+
+#### 适用于 OpenCode
+
+```bash
+# 安装
+./install-opencode.sh
+
+# 卸载
+./uninstall-opencode.sh
+```
+
+#### 适用于 Claude Code
+
+```bash
+# 安装
+./install-claude.sh
+
+# 卸载
+./uninstall-claude.sh
+```
+
+---
+### 旧版插件模式 (高级)
+
 ### 方式一：完整插件安装（推荐）
 
 此方式启用**所有功能，包括 hooks**，自动触发元认知流程。

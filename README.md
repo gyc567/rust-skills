@@ -45,6 +45,48 @@ AI (with Rust Skills):
 
 ## Installation
 
+### NPX (Recommended)
+
+The easiest way to install the skills globally is using `npx`:
+
+```bash
+# For OpenCode Environments
+npx add-rust-skill opencode
+
+# For Claude Code Environments
+npx add-rust-skill claude
+```
+This command will copy the skills to the appropriate user configuration directory.
+
+---
+
+### Manual Installation
+
+If you prefer to manage the installation manually, you can use the one-click shell scripts.
+
+#### For OpenCode
+
+```bash
+# Install
+./install-opencode.sh
+
+# Uninstall
+./uninstall-opencode.sh
+```
+
+#### For Claude Code
+
+```bash
+# Install
+./install-claude.sh
+
+# Uninstall
+./uninstall-claude.sh
+```
+
+---
+### Legacy Plugin Method (Advanced)
+
 ### Method 1: Full Plugin (Recommended)
 
 This method enables **all features including hooks** for automatic meta-cognition triggering.

@@ -45,6 +45,48 @@ AI (Rust Skills 使用):
 
 ## インストール
 
+### NPX インストール (推奨)
+
+最も簡単なグローバルインストール方法は `npx` を使用することです：
+
+```bash
+# OpenCode 環境向け
+npx add-rust-skill opencode
+
+# Claude Code 環境向け
+npx add-rust-skill claude
+```
+このコマンドは、スキルを適切なユーザー設定ディレクトリに自動的にコピーします。
+
+---
+
+### 手動インストール
+
+手動でインストールを管理したい場合は、ワンクリックシェルスクリプトを使用できます。
+
+#### OpenCode 向け
+
+```bash
+# インストール
+./install-opencode.sh
+
+# アンインストール
+./uninstall-opencode.sh
+```
+
+#### Claude Code 向け
+
+```bash
+# インストール
+./install-claude.sh
+
+# アンインストール
+./uninstall-claude.sh
+```
+
+---
+### 旧来のプラグイン方式 (上級者向け)
+
 ### 方法1：完全プラグイン（推奨）
 
 この方法は **hooks を含むすべての機能**を有効にし、メタ認知を自動的にトリガーします。
