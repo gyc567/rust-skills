@@ -45,9 +45,23 @@ AI (with Rust Skills):
 
 ## Installation
 
-### NPX (Recommended)
+### One-Click Remote Installation (Easiest)
+The quickest way to install is with a single command, which securely downloads and runs the installer.
 
-The easiest way to install the skills globally is using `npx`:
+```bash
+curl -sSL https://raw.githubusercontent.com/gyc567/rust-skills/main/scripts/install.sh | bash
+```
+**Note:** This installation is interactive and will prompt for confirmation before making any changes.
+
+---
+
+### Other Installation Methods
+
+<details>
+<summary>Click to expand other installation methods (NPX, Manual Scripts)</summary>
+
+#### NPX Installation
+Requires Node.js.
 
 ```bash
 # For OpenCode Environments
@@ -56,33 +70,19 @@ npx add-rust-skill opencode
 # For Claude Code Environments
 npx add-rust-skill claude
 ```
-This command will copy the skills to the appropriate user configuration directory.
 
----
-
-### Manual Installation
-
-If you prefer to manage the installation manually, you can use the one-click shell scripts.
-
-#### For OpenCode
+#### Manual Script Installation
+Requires cloning the repository first.
 
 ```bash
-# Install
-./install-opencode.sh
-
-# Uninstall
-./uninstall-opencode.sh
+git clone https://github.com/gyc567/rust-skills.git
+cd rust-skills
 ```
+Then run the appropriate script:
+- `./install-opencode.sh`
+- `./install-claude.sh`
 
-#### For Claude Code
-
-```bash
-# Install
-./install-claude.sh
-
-# Uninstall
-./uninstall-claude.sh
-```
+</details>
 
 ---
 ### Legacy Plugin Method (Advanced)

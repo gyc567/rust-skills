@@ -45,9 +45,23 @@ AI (使用 Rust Skills):
 
 ## 安装
 
-### NPX 安装 (推荐)
+### 一键远程安装 (最简单)
+最快捷的安装方式是使用以下单行命令，它会安全地下载并运行安装程序。
 
-最简单的全局安装方式是使用 `npx`：
+```bash
+curl -sSL https://raw.githubusercontent.com/gyc567/rust-skills/main/scripts/install.sh | bash
+```
+**注意:** 此安装过程是交互式的，在对您的系统进行任何更改之前，会请求您的确认。
+
+---
+
+### 其他安装方式
+
+<details>
+<summary>点击展开其他安装方式 (NPX, 手动脚本)</summary>
+
+#### NPX 安装
+需要 Node.js 环境。
 
 ```bash
 # 适用于 OpenCode 环境
@@ -56,33 +70,19 @@ npx add-rust-skill opencode
 # 适用于 Claude Code 环境
 npx add-rust-skill claude
 ```
-该命令会自动将技能复制到对应的用户配置目录中。
 
----
-
-### 手动安装
-
-如果您希望手动管理安装过程，可以使用一键安装脚本。
-
-#### 适用于 OpenCode
+#### 手动脚本安装
+需要先克隆本仓库。
 
 ```bash
-# 安装
-./install-opencode.sh
-
-# 卸载
-./uninstall-opencode.sh
+git clone https://github.com/gyc567/rust-skills.git
+cd rust-skills
 ```
+然后运行对应的脚本:
+- `./install-opencode.sh`
+- `./install-claude.sh`
 
-#### 适用于 Claude Code
-
-```bash
-# 安装
-./install-claude.sh
-
-# 卸载
-./uninstall-claude.sh
-```
+</details>
 
 ---
 ### 旧版插件模式 (高级)
